@@ -49,7 +49,7 @@ app.post('/api/shorturl', async (req, res) => {
   console.log(url, isValid)
 
   if (!isValid) {
-    return res.status(400).json({ error: 'Invalid URL' })
+    return res.status(200).json({ error: 'Invalid URL' })
   }
 
   try {
