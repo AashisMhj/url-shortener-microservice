@@ -4,8 +4,8 @@
   "description": "API project for freeCodeCamp",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node index.mjs",
+    "dev": "nodemon index.mjs"
   },
   "dependencies": {
     "body-parser": "^1.20.3",

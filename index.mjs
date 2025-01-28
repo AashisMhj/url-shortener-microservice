@@ -1,12 +1,20 @@
-require('dotenv').config();
-const express = require('express');
-const cors = require('cors');
-const app = express();
-const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
-const { nanoid } = require('nanoid');
-const { isValidURL } = require('./helper');
+// require('dotenv').config();
+// const express = require('express');
+// const cors = require('cors');
+// const app = express();
+// const mongoose = require('mongoose');
+// const bodyParser = require('body-parser');
+// const { nanoid } = require('nanoid');
+// const { isValidURL } = require('./helper');
 
+import 'dotenv/config'
+import express from 'express';
+import cors from 'cors';
+import mongoose from 'mongoose';
+import { nanoid } from 'nanoid';
+import {isValidURL} from './helper/index.mjs'
+
+const app = express();
 // Basic Configuration
 const port = process.env.PORT || 3000;
 
